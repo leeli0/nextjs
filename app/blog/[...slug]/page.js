@@ -17,3 +17,11 @@ async function getData(slug) {
 
   return data;
 }
+
+async function generateStaticParams() {
+  const posts = await getAllPostIds()
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
