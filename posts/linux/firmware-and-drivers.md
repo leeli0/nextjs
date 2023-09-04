@@ -1,19 +1,22 @@
 ---
 title: 'Firmware and Drivers'
-date: '18 July, 2023'
+release: '18 July, 2023'
+update: '04 September, 2023'
+author: 'Lee Li'
+category: 'linux'
+tag: 'linux'
 ---
 
-For **computer platforms**, microcontroller firmware implements some functionalities of hardware and
-provides some interfaces. UEFI firmware works with microcontroller firmware to handle the computer
+For **computer platforms**, microcontroller firmware interfaces the hardware to Operating Systems
+and drivers. UEFI firmware works with microcontroller firmware to handle the computer
 before OSs and its drivers kick in, initializes the hardware and provides necessary information to
 the OSs. Thus, the OSs can install the correct drivers and drivers know the available way to control
 the hardware.  Drivers can invoke firmware routines or directly control the hardware to carry out
-tasks send by OSs. All firmware is **self-contained subsystems** automatically load and run when
+tasks sent by OSs. All firmware is **self-contained subsystems** automatically loaded and run when
 hardware switchs on , can work together to compose a bigger system. OS drivers provide interfaces
 for hardware/software, is part of a OS, have to loaded by OSs, can't directly run by hardware.
 
-**Firmware** is a software system developed for a specific hardware platform. Its role vary
-significantly for different hardware platform. Let's see some examples.
+**Firmware** is a software system developed for a specific hardware platform and directly run on it. Its role vary significantly for different hardware platform. Let's see some examples.
 
 On mainboards, there are one or more PCIe controllers. A PCIe controller is typically implemented as
 a microcontroller. **A microcontroller** is a small integrated circuit (IC) that contains a CPU
