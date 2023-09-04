@@ -6,11 +6,11 @@ export default async function Page() {
   return (
     <section>
       <ul>
-        {data.map(({id, date, title}) => (
+        {data.map(({id, update, title}) => (
           <li key={id}>
           <Link href={`/blog/${id}`}>{title}</Link>
           <br />
-          <small>{date}</small>
+          <small><b>Update:</b> {update}</small>
           </li>
         ))}
       </ul>

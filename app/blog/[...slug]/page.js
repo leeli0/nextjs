@@ -6,7 +6,7 @@ export default async function Page({ params }) {
   return (
     <article>
       <h1>{data.title}</h1>
-      <div>{data.date}</div>
+      <div><b>Release:</b> {data.release} <b>Update:</b> {data.update} <b>Author:</b> {data.author}</div>
       <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />
     </article>
   )
