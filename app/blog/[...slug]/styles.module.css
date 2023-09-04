@@ -1,6 +1,7 @@
 .page {
   margin: auto;
   max-width: 60em;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 1000px) {
