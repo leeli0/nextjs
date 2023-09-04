@@ -4,11 +4,11 @@ import Head from 'next/head'
 export default async function Page({ params }) {
   const data = await getData(params.slug)
   return (
-    <artile>
+    <article>
       <h1>{data.title}</h1>
       <div>{data.date}</div>
       <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />
-    </artile>
+    </article>
   )
 }
 
